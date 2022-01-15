@@ -2,81 +2,78 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona testowa</title> <!--Widoczne na górze na pasku-->
+    <title>127.0.0.1:5500</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-        <header>
-            <div>
-                <h1>Moja strona</h1> <!--h1 jest to najwiekszy możliwy heading (główny tytuł)-->
-                <h3>Witam na mojej stronie</h3> <!--H3 jako heading (mniejszy od h2 i h1)-->
-            </div>
-        </header>
-    <br> <!--Br daje przerwe między tekstami-->
-        <article>
-            <div>
-                <h3>Moje pasje</h3> <!--H3 jest mniejsze od h2, a h2 mniejsze od h1 (HEADING)-->
-                <p>lubie pisać</p> <!--P używamy jako paragrafu (mały tekst, treść)-->
-                    <ul>
-                        <li>Lubie jeść</li>
-                        <li>lubie spać</li>
-                        <li>Lubie pisać</li>
-                        
-                    </ul>
-    <br>                
-                    <ol>
-                        <li>Lubię jeść</li>
-                        <li>Lubię spać</li>
-                        <li>Lubię pisać</li> <span> Koniec listy hobby</span>
-                        
-                    </ol>
-            </div>
-        </article>
 
-        <div>
-            <table border="1">
-                <tr>
-                        <th>Język</th>
-                        <th>Trudność</th>
-                </tr>
-                
-                        <tr>
-                           <td>
-                            html
-                           </td>
-                                    <td> 4</td>
+    <header>
+        <h1 style="color: #171010" >Witaj na mojej pierwszej stronie!</h1>
+        <a href="kontakt.html" style="margin-right: 10px; margin-top: 6px;">Napisz do mnie!</a>
+    </header>
 
-                        </tr>
-                        <tr>
-                           <td>
-                            CSS
-                           </td>
-                                    <td>4</td>
+    <br>
 
-                        </tr>
-                        <tr>
-                           <td>
-                            JS
-                           </td>
-                                    <td>6</td>
+    <div id="main-content">
 
-                        </tr>
-                        
+        <section id="articles">
+            <article class="art1">
+                <h3>Oto pierwszy post!</h3>
+                <p>Zawartość pierwszego posta!</p>
+                <!-- width of content area only -->
+            </article>
+            
+          
+    
+            <article>
+                <h3>Oto drugi post!</h3>
+                <p>Zawartość mojego drugiego posta!</p>
+            </article>
+            
+          
+    
+            <article>
+                <h3>Oto trzeci post!</h3>
+                <p>Oto Zawartość Trzeciego posta! <br> oto tekst napisany <i>kursywą</i>. <sup class="sup_element">*</sup></p>
+                <small><sup class="sup_element">*</sup>Następne sentencje</small>
+            </article>
 
-            </table> 
+
+        </section>
+
+    <div id="skills" style="color: #171010;"> <!-- div is the block element -->
+        <b style="font-size: larger;">Moje umiejętności</b>
+        <table>
+            <tr>
+                <th>Technologia</th>
+                <th>Poziom</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>fine :)</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    </div>
+
+
+    <footer>
+        <div class="stopka">
+            &copy; <b>Igor</b>
         </div>
-    <br>
-    <br>
-    <br>
-    <br>
-        <div>
-            <footer>
-                <p><a href="kontakt.html">Zkontaktuj</a> się ze mną już teraz!</p> <p> &copy; Igor</p>
-                
-            </footer> 
-        </div>
-        <script src="scripts.js"></script>
+    </footer>
+
+    <!-- Content not wrapped in any tag (barely used in reality) -->
+    <script src="scripts.js"></script>
 </body>
 </html>

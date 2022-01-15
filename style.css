@@ -1,0 +1,90 @@
+body {
+    font-family: 'Nunito';
+    font-size: 22px;
+    background-color: rgb(146, 146, 146);
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.6px;
+    background-image: linear-gradient(170deg, #2c2a2a, rgb(175, 175, 175));
+}
+
+* {
+box-sizing: border-box;
+}
+h1 {
+    color: #D3DEDC;
+    max-width: 600px;
+}
+
+h3 {
+    color: #171010;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    color: #171010;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sup_element {
+    color: red;
+}
+
+div#main-content {
+    background-color: rgb(119, 116, 116);
+    align-self: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+}
+article {
+    margin-bottom: 40px;
+}
+a {
+    color: 171010;
+}
+header {
+display: flex;
+justify-content: space-between;
+background-color: rgb(124, 121, 121);
+border-radius: 15px;
+margin: 10px;
+align-items: center;
+}
+#main-content {
+    display: flex;
+}
+footer {
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(119, 116, 116);
+
+}
+@media screen and (min-width: 600px) {
+    footer {
+        position: fixed;
+    }
+}
+@media screen and (max-width: 600px) {
+    div#main-content, header  {
+        flex-direction: column;
+    }
+}
+table {
+    line-height: 200%;
+    width: 300px;
+    height: 200px;
+    align-self: center;
+    display: flex;
+    border-top: 3px solid; border-radius: 2px; border;
+}
+table th {
+    align: left;
+}
